@@ -19,6 +19,24 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
     <artifactId>gson</artifactId>
     <version>2.11.0</version>
   </dependency>
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>5.10.0</version>
+      <scope>test</scope>
+    </dependency>
 </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Plugin para compilar con Java y soportar JUnit 5 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+      </plugin>
+    </plugins>
+  </build>
+
 
 </project>

@@ -1,6 +1,5 @@
 package com.juan.PokeApi;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 import com.google.gson.JsonObject;
@@ -9,7 +8,7 @@ import com.google.gson.JsonParser;
 import okhttp3.*;
 public class App {
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		
 		ApiService service = new ApiService();
 		OkHttpClient client = new OkHttpClient();

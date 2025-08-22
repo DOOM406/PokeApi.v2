@@ -12,7 +12,7 @@ public class ApiService {
 
 	private OkHttpClient client = new OkHttpClient();
 	
-	public Pokemones getPokemon(String nombre) throws IOException{
+	public Pokemones getPokemon(String nombre) throws Exception{
 		//armado de url
 		String url = "https://pokeapi.co/api/v2/pokemon/"+nombre.toLowerCase();
 		//pedido a la api

@@ -6,8 +6,7 @@ public class Pokemones {
 	private int heigth;
 	private int weight;
 	
-	public Pokemones(String name, int heigth, int weight) {
-		
+	public Pokemones(String name, int heigth, int weight) throws ExceptionPokemon {
 		this.name = name;
 		this.heigth = heigth;
 		this.weight = weight;

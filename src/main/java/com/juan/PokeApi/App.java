@@ -38,7 +38,7 @@ public class App {
 		
 		int bandera=1;
 		while(bandera==1) {
-			System.out.println("-Name\n-Height\n-Weight\n-Salir");
+			System.out.println("-Name\n-Height\n-Weight\n-Abilities\n-Salir");
 			String valor = sc.nextLine().toLowerCase();
 			switch (valor) {
 			case "name":
@@ -54,6 +54,9 @@ public class App {
 				
 				System.out.println("El peso de tu pokemon es de "+pokemons.getWeight()+"kg.");
 				System.out.println("Desea ver algo mas?\n: ");
+				break;
+			case "abilities":
+				pokemons.habilidades();
 				break;
 			case "salir":
 				bandera=0;
